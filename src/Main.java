@@ -5,5 +5,7 @@ public class Main {
         Calculations.perPerson();
         System.out.println();
         Calculations.toPay();
+        System.out.println();
+        Calculations.detailedCalculations();
     }
 }

@@ -3,12 +3,15 @@ public class Calculations {
     static double price;
     static double oldMeasurmentPower = 7388.1;
     static double newMeasurmentPower = 7488.9;
+    static double differencePower = newMeasurmentPower - oldMeasurmentPower;
 
     static double oldMeasurmentGas = 1272.423;
     static double newMeasurmentGas = 1304.970;
+    static double differenceGas = newMeasurmentGas - oldMeasurmentGas;
 
     static double oldMeasurmentWater = 970.371;
     static double newMeasurmentWater = 981.824;
+    static double differenceWater = newMeasurmentWater - oldMeasurmentWater;
 
     public static double Power(){
         price = ( newMeasurmentPower - oldMeasurmentPower ) * 0.6848;
@@ -64,6 +67,12 @@ public class Calculations {
         System.out.println("Do spółdzielni: 300zł");
         toPay -= 300;
         System.out.println("Do właścicieli: " + toPay + "zł");
+    }
+
+    public static void detailedCalculations(){
+        System.out.println("Prąd: " + Rounding.round(differencePower, 4) + " * 0.6848" + " = " + Power());
+        System.out.println("Gaz: " + Rounding.round(differenceGas, 4) + " * 3.2" + " = " + Gas());
+        System.out.println("Woda: " + Rounding.round(differenceWater, 4) + " * 10.16" + " = " + Water());
     }
 
 }
