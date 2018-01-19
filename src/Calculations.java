@@ -1,16 +1,16 @@
 public class Calculations {
     
     static double price;
-    static double oldMeasurmentPower = 7388.1;
-    static double newMeasurmentPower = 7488.9;
+    static double oldMeasurmentPower = 7488.9;
+    static double newMeasurmentPower = 7566.4;
     static double differencePower = newMeasurmentPower - oldMeasurmentPower;
 
-    static double oldMeasurmentGas = 1272.423;
-    static double newMeasurmentGas = 1304.970;
+    static double oldMeasurmentGas = 1304.970;
+    static double newMeasurmentGas = 1326.981;
     static double differenceGas = newMeasurmentGas - oldMeasurmentGas;
 
-    static double oldMeasurmentWater = 970.371;
-    static double newMeasurmentWater = 981.824;
+    static double oldMeasurmentWater = 981.824;
+    static double newMeasurmentWater = 989.553;
     static double differenceWater = newMeasurmentWater - oldMeasurmentWater;
 
     public static double Power(){
